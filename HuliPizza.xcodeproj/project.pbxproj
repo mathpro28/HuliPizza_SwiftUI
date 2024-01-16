@@ -11,6 +11,12 @@
 		A28B21862B56144A009BA72D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28B21852B56144A009BA72D /* ContentView.swift */; };
 		A28B21882B56144C009BA72D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A28B21872B56144C009BA72D /* Assets.xcassets */; };
 		A28B218B2B56144C009BA72D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A28B218A2B56144C009BA72D /* Preview Assets.xcassets */; };
+		A2DBA6E52B572DCC001561F2 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DBA6E42B572DCC001561F2 /* OrderView.swift */; };
+		A2DBA6E72B572E81001561F2 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DBA6E62B572E81001561F2 /* MenuView.swift */; };
+		A2DBA6E92B572ED9001561F2 /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DBA6E82B572ED9001561F2 /* MenuItemView.swift */; };
+		A2DBA6EB2B572EEA001561F2 /* MenuRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DBA6EA2B572EEA001561F2 /* MenuRowView.swift */; };
+		A2DBA6ED2B572EFD001561F2 /* OrderRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DBA6EC2B572EFD001561F2 /* OrderRowView.swift */; };
+		A2DBA6EF2B572F08001561F2 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DBA6EE2B572F07001561F2 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		A28B21852B56144A009BA72D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A28B21872B56144C009BA72D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A28B218A2B56144C009BA72D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A2DBA6E42B572DCC001561F2 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		A2DBA6E62B572E81001561F2 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		A2DBA6E82B572ED9001561F2 /* MenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
+		A2DBA6EA2B572EEA001561F2 /* MenuRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRowView.swift; sourceTree = "<group>"; };
+		A2DBA6EC2B572EFD001561F2 /* OrderRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRowView.swift; sourceTree = "<group>"; };
+		A2DBA6EE2B572F07001561F2 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,12 @@
 			children = (
 				A28B21832B56144A009BA72D /* HuliPizzaApp.swift */,
 				A28B21852B56144A009BA72D /* ContentView.swift */,
+				A2DBA6E42B572DCC001561F2 /* OrderView.swift */,
+				A2DBA6E62B572E81001561F2 /* MenuView.swift */,
+				A2DBA6E82B572ED9001561F2 /* MenuItemView.swift */,
+				A2DBA6EA2B572EEA001561F2 /* MenuRowView.swift */,
+				A2DBA6EC2B572EFD001561F2 /* OrderRowView.swift */,
+				A2DBA6EE2B572F07001561F2 /* HeaderView.swift */,
 				A28B21872B56144C009BA72D /* Assets.xcassets */,
 				A28B21892B56144C009BA72D /* Preview Content */,
 			);
@@ -137,8 +155,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2DBA6E52B572DCC001561F2 /* OrderView.swift in Sources */,
+				A2DBA6E72B572E81001561F2 /* MenuView.swift in Sources */,
 				A28B21862B56144A009BA72D /* ContentView.swift in Sources */,
 				A28B21842B56144A009BA72D /* HuliPizzaApp.swift in Sources */,
+				A2DBA6EB2B572EEA001561F2 /* MenuRowView.swift in Sources */,
+				A2DBA6ED2B572EFD001561F2 /* OrderRowView.swift in Sources */,
+				A2DBA6E92B572ED9001561F2 /* MenuItemView.swift in Sources */,
+				A2DBA6EF2B572F08001561F2 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
