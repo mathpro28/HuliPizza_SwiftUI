@@ -17,6 +17,7 @@
 		A2DBA6EB2B572EEA001561F2 /* MenuRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DBA6EA2B572EEA001561F2 /* MenuRowView.swift */; };
 		A2DBA6ED2B572EFD001561F2 /* OrderRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DBA6EC2B572EFD001561F2 /* OrderRowView.swift */; };
 		A2DBA6EF2B572F08001561F2 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DBA6EE2B572F07001561F2 /* HeaderView.swift */; };
+		A2DBA6F12B574536001561F2 /* RatingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DBA6F02B574536001561F2 /* RatingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		A2DBA6EA2B572EEA001561F2 /* MenuRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRowView.swift; sourceTree = "<group>"; };
 		A2DBA6EC2B572EFD001561F2 /* OrderRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRowView.swift; sourceTree = "<group>"; };
 		A2DBA6EE2B572F07001561F2 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		A2DBA6F02B574536001561F2 /* RatingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			children = (
 				A28B21832B56144A009BA72D /* HuliPizzaApp.swift */,
 				A28B21852B56144A009BA72D /* ContentView.swift */,
+				A2DBA6F02B574536001561F2 /* RatingsView.swift */,
 				A2DBA6E42B572DCC001561F2 /* OrderView.swift */,
 				A2DBA6E62B572E81001561F2 /* MenuView.swift */,
 				A2DBA6E82B572ED9001561F2 /* MenuItemView.swift */,
@@ -159,6 +162,7 @@
 				A2DBA6E72B572E81001561F2 /* MenuView.swift in Sources */,
 				A28B21862B56144A009BA72D /* ContentView.swift in Sources */,
 				A28B21842B56144A009BA72D /* HuliPizzaApp.swift in Sources */,
+				A2DBA6F12B574536001561F2 /* RatingsView.swift in Sources */,
 				A2DBA6EB2B572EEA001561F2 /* MenuRowView.swift in Sources */,
 				A2DBA6ED2B572EFD001561F2 /* OrderRowView.swift in Sources */,
 				A2DBA6E92B572ED9001561F2 /* MenuItemView.swift in Sources */,
