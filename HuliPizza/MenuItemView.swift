@@ -8,19 +8,56 @@
 import SwiftUI
 
 struct MenuItemView: View {
+    @State private var addedItem:Bool = false
+    @Binding var item:MenuItem
     var body: some View {
         VStack {
-            if let image = UIImage(named: "0_lg") {
-                Image(uiImage: image)
-            } else {
-                Image("surfboard_sm")
+            HStack {
+                Text(item.name)
+                    .font(.title)
+                    .fontWeight(.semibold)
+                //                    .foregroundColor(Color("Surf"))
+                    .foregroundStyle(.ultraThickMaterial)
+                    .padding(.leading)
+                if let image = UIImage(named: "\(item.id)_lg") {
+                    Image(uiImage: image)
+                        .resizable()
+                        .scaledToFit()
+                        .padding([.top, .bottom], 5)
+                        .cornerRadius(15)
+                } else {
+                    Image("surfboard_sm")
+                        .resizable()
+                        .scaledToFit()
+                        .rotationEffect(.degrees(180))
+                }
+                
             }
-            Text("Margharita")
-            Text("Description")
+            .background(.linearGradient(colors: [Color("Surf"), Color("Sky").opacity(0.1)], startPoint: .leading, endPoint: .trailing), in: Capsule())
+            .shadow(color: .teal, radius: 5, x:8, y:8)
+            
+            VStack(alignment: .leading) {
+                ScrollView {
+                    Text(item.description)
+                        .font(.custom("Georgia", size: 18, relativeTo: .body))
+                }
+            }
+            Button {
+                addedItem = true
+            } label: {
+                Spacer()
+                Text(12.99, format: .currency(code: "USD")).bold()
+                Image(systemName: addedItem ? "cart.fill.badge.plus" : "cart.badge.plus")
+                Spacer()
+            }
+            .padding()
+            .background(.red, in:Capsule())
+            .foregroundStyle(.white)
+            .padding(5)
         }
     }
 }
 
 #Preview {
-    MenuItemView()
+    MenuItemView(item: .constant(testMenuItem))
 }
