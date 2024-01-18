@@ -11,6 +11,10 @@
 		A28B21862B56144A009BA72D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28B21852B56144A009BA72D /* ContentView.swift */; };
 		A28B21882B56144C009BA72D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A28B21872B56144C009BA72D /* Assets.xcassets */; };
 		A28B218B2B56144C009BA72D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A28B218A2B56144C009BA72D /* Preview Assets.xcassets */; };
+		A2C3A57C2B58B35B00FD5AEF /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C3A57B2B58B35A00FD5AEF /* OrderItem.swift */; };
+		A2C3A5812B58B36F00FD5AEF /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C3A57E2B58B36F00FD5AEF /* MenuModel.swift */; };
+		A2C3A5822B58B36F00FD5AEF /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C3A5802B58B36F00FD5AEF /* MenuItem.swift */; };
+		A2C3A5842B58B36F00FD5AEF /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C3A57D2B58B36F00FD5AEF /* OrderModel.swift */; };
 		A2DBA6E52B572DCC001561F2 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DBA6E42B572DCC001561F2 /* OrderView.swift */; };
 		A2DBA6E72B572E81001561F2 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DBA6E62B572E81001561F2 /* MenuView.swift */; };
 		A2DBA6E92B572ED9001561F2 /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DBA6E82B572ED9001561F2 /* MenuItemView.swift */; };
@@ -26,6 +30,10 @@
 		A28B21852B56144A009BA72D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A28B21872B56144C009BA72D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A28B218A2B56144C009BA72D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A2C3A57B2B58B35A00FD5AEF /* OrderItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
+		A2C3A57D2B58B36F00FD5AEF /* OrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
+		A2C3A57E2B58B36F00FD5AEF /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
+		A2C3A5802B58B36F00FD5AEF /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		A2DBA6E42B572DCC001561F2 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		A2DBA6E62B572E81001561F2 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		A2DBA6E82B572ED9001561F2 /* MenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
@@ -74,6 +82,7 @@
 				A2DBA6EA2B572EEA001561F2 /* MenuRowView.swift */,
 				A2DBA6EC2B572EFD001561F2 /* OrderRowView.swift */,
 				A2DBA6EE2B572F07001561F2 /* HeaderView.swift */,
+				A2C3A57A2B58B34900FD5AEF /* Model Code */,
 				A28B21872B56144C009BA72D /* Assets.xcassets */,
 				A28B21892B56144C009BA72D /* Preview Content */,
 			);
@@ -86,6 +95,17 @@
 				A28B218A2B56144C009BA72D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A2C3A57A2B58B34900FD5AEF /* Model Code */ = {
+			isa = PBXGroup;
+			children = (
+				A2C3A5802B58B36F00FD5AEF /* MenuItem.swift */,
+				A2C3A57E2B58B36F00FD5AEF /* MenuModel.swift */,
+				A2C3A57D2B58B36F00FD5AEF /* OrderModel.swift */,
+				A2C3A57B2B58B35A00FD5AEF /* OrderItem.swift */,
+			);
+			path = "Model Code";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +185,10 @@
 				A2DBA6F12B574536001561F2 /* RatingsView.swift in Sources */,
 				A2DBA6EB2B572EEA001561F2 /* MenuRowView.swift in Sources */,
 				A2DBA6ED2B572EFD001561F2 /* OrderRowView.swift in Sources */,
+				A2C3A5812B58B36F00FD5AEF /* MenuModel.swift in Sources */,
+				A2C3A57C2B58B35B00FD5AEF /* OrderItem.swift in Sources */,
+				A2C3A5842B58B36F00FD5AEF /* OrderModel.swift in Sources */,
+				A2C3A5822B58B36F00FD5AEF /* MenuItem.swift in Sources */,
 				A2DBA6E92B572ED9001561F2 /* MenuItemView.swift in Sources */,
 				A2DBA6EF2B572F08001561F2 /* HeaderView.swift in Sources */,
 			);
