@@ -16,6 +16,7 @@ struct ContentView: View {
         VStack {
             HeaderView()
                 .shadow(radius: 5)
+                .environment(\.colorScheme, .light) //the text keeps light even when dark mode on
             HStack {
                 Text("\(orders.orderItems.count) orders")
                 Spacer()
