@@ -17,19 +17,7 @@ struct ContentView: View {
             HeaderView()
                 .shadow(radius: 5)
                 .environment(\.colorScheme, .light) //the text keeps light even when dark mode on
-            HStack {
-                Text("\(orders.orderItems.count) orders")
-                Spacer()
-                Button {
-                    showOrders.toggle()
-                } label: {
-                    Image(systemName: showOrders ? "cart" : "menucard")
-                        
-                }
-            }
-            .foregroundStyle(.white)
-            .font(.title2)
-            
+            StatusBarView(showOrders: $showOrders)
             if showOrders {
                 OrderView(orders: orders)
                     .cornerRadius(10)
