@@ -104,7 +104,12 @@ struct OrderDetailView: View {
             HStack {
                 Button("Order"){
                     updateOrder()
-                    
+                    if newOrder{
+                        orders.addOrder(orderItem: orderItem)
+                    } else {
+                        orders.replaceOrder(id: orderItem.id, with: orderItem)
+                    }
+                    presentSheet = false
                     }
                     .padding()
                     .padding([.leading,.trailing])
@@ -114,7 +119,7 @@ struct OrderDetailView: View {
                     .padding(.trailing,20)
                     .shadow(radius:7,x:2,y:2)
                 Button("Cancel"){
-                    
+                    presentSheet = false
                 }
                 .padding()
                 .padding([.leading,.trailing])
@@ -139,3 +144,12 @@ struct OrderDetailView_Previews: PreviewProvider {
 }
 
 let noOrderItem = OrderItem(id: -1, item:noMenuItem)
+
+extension OrderModel{
+    func replaceOrder(id:Int,with item:OrderItem){
+        if let index = self.orderItems.firstIndex(where: {$0.id == id}){
+            self.orderItems.remove(at: index)
+            self.orderItems.insert(item, at: index)
+        }
+    }
+}
