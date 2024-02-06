@@ -13,10 +13,13 @@ struct OrderRowView: View {
         VStack {
             HStack {
                 Text(order.item.name)
+                Text("- " + order.preferredCrust.rawValue )
+                if order.extraIngredients{Image(systemName: "2.circle")}
                 Spacer()
+                Text(order.name)
             }
-            HStack(alignment: .firstTextBaseline) {
-                Text(order.quantity, format: .number)
+            HStack(alignment:.firstTextBaseline){
+                Text(order.quantity, format:.number)
                 Text(order.item.price, format: .currency(code: "USD"))
                 Spacer()
                 Text(order.extPrice, format: .currency(code: "USD"))
@@ -26,6 +29,9 @@ struct OrderRowView: View {
     }
 }
 
-#Preview {
-    OrderRowView(order: .constant(testOrderItem))
+struct OrderRowView_Previews: PreviewProvider {
+    static var previews: some View {
+        OrderRowView(order: .constant(testOrderItem))
+    }
 }
+
